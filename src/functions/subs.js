@@ -1,6 +1,6 @@
 const numbersArray = [];
 
-const mult = (ev) => {
+export const subs = (ev) => {
   const inputSelected = document.querySelector('input[type="number"]');
   const inputValue = inputSelected.value;
   const transformValueToNumber = parseInt(inputValue);
@@ -10,17 +10,15 @@ const mult = (ev) => {
   if (!transformValueToNumber == 0) {
     inputSelected.value = '';
     numbersArray.push(transformValueToNumber);
-    const mult = numbersArray.reduce((total, num, index) => {
+    const subs = numbersArray.reduce((total, num, index) => {
       if (index === 0) {
         return num;
       } else {
-        return total * num;
+        return total - num;
       }
     }, 0);
-    h2Result.innerHTML = `RESULT: ${mult}`;
+    h2Result.innerHTML = `RESULT: ${subs}`;
   }
 
   return inputSelected;
 };
-
-export default mult;

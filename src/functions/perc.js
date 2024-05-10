@@ -1,6 +1,6 @@
 const numbersArray = [];
 
-const perc = (ev) => {
+export const perc = (ev) => {
   const inputSelected = document.querySelector('input[type="number"]');
   const inputValue = inputSelected.value;
   const transformValueToNumber = parseInt(inputValue);
@@ -16,5 +16,3 @@ const perc = (ev) => {
 
   return inputSelected;
 };
-
-export default perc;

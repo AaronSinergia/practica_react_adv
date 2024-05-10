@@ -1,20 +1,17 @@
 const numbersArray = [];
 
-const sum = (ev) => {
+export const sum = () => {
   const inputSelected = document.querySelector('input[type="number"]');
   const inputValue = inputSelected.value;
   const transformValueToNumber = parseInt(inputValue);
 
-  const h2Result = document.querySelector('.result_text');
-
-  if (!transformValueToNumber == 0) {
+  if (transformValueToNumber !== 0) {
     inputSelected.value = '';
     numbersArray.push(transformValueToNumber);
-    const sum = numbersArray.reduce((total, num) => total + num, 0);
-    h2Result.innerHTML = `RESULT: ${sum}`;
+    const result = numbersArray.reduce((total, num) => total + num, 0);
+    const result_btn = document.querySelector('.result_text');
+    result_btn.innerHTML = `RESULT: ${result}`;
   }
 
-  return inputSelected;
+  // return inputSelected;
 };
-
-export default sum;

@@ -1,0 +1,16 @@
+.calculator_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a45555;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.operations_div {
+  display: flex;
+  padding: 50px 40px 30px 40px;
+}

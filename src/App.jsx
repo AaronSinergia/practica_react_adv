@@ -1,11 +1,11 @@
 import './App.css';
-import Calculator from './components/Calculator/Calculator';
+import Calculatorbody from './components/Calculatorbody/Calculatorbody';
 import Timer from './components/Timer/Timer';
 
 function App() {
   return (
     <>
-      <Calculator />
+      <Calculatorbody />
       <Timer />
     </>
   );

@@ -1,6 +1,6 @@
 const numbersArray = [];
 
-const div = (ev) => {
+export const div = (ev) => {
   const inputSelected = document.querySelector('input[type="number"]');
   const inputValue = inputSelected.value;
   const transformValueToNumber = parseInt(inputValue);
@@ -22,5 +22,3 @@ const div = (ev) => {
 
   return inputSelected;
 };
-
-export default div;

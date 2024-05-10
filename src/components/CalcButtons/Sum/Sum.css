@@ -1,0 +1,9 @@
+button {
+  width: 50px;
+  flex-direction: row;
+  padding: 10px;
+}
+
+button > .sum {
+  margin: 0 0 0 10px;
+}
