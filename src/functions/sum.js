@@ -5,13 +5,14 @@ export const sum = () => {
   const inputValue = inputSelected.value;
   const transformValueToNumber = parseInt(inputValue);
 
+  let result;
+
   if (transformValueToNumber !== 0) {
     inputSelected.value = '';
     numbersArray.push(transformValueToNumber);
-    const result = numbersArray.reduce((total, num) => total + num, 0);
-    const result_btn = document.querySelector('.result_text');
-    result_btn.innerHTML = `RESULT: ${result}`;
+    result = numbersArray.reduce((total, num) => total + num, 0);
+    return result;
+  } else {
+    return 0;
   }
-
-  // return inputSelected;
 };

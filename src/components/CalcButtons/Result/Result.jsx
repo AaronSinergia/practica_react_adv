@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Result.css';
 import ResultText from './ResultText/ResultText';
+import { calcContext } from '../../../context/calcContext';
 
-const Result = ({ result }) => {
+const Result = () => {
+  const { showResult, setShowResult } = useContext(calcContext);
+
+  const handleResult = () => {
+    setShowResult(true);
+  };
+
   return (
     <>
-      <button className="result">=</button>
-      <ResultText />
+      <button onClick={handleResult} className="result">
+        =
+      </button>
+      {showResult && <ResultText />}
     </>
   );
 };
