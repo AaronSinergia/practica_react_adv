@@ -4,7 +4,7 @@ import { div } from '../../../functions/div';
 
 const Div = () => {
   return (
-    <button onClick={div} className="div">
+    <button onClick={div} className="div calcBtn">
       /
     </button>
   );

@@ -13,7 +13,7 @@ const Sum = () => {
   console.log(result);
   return (
     <>
-      <button onClick={returnedSum} className="sum">
+      <button onClick={returnedSum} className="sum calcBtn">
         +
       </button>
     </>

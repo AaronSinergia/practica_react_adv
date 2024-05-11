@@ -4,7 +4,7 @@ import { mult } from '../../../functions/mult';
 
 const Mult = () => {
   return (
-    <button onClick={mult} className="mult">
+    <button onClick={mult} className="mult calcBtn">
       x
     </button>
   );

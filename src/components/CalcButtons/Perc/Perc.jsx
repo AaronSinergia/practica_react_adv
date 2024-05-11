@@ -4,7 +4,7 @@ import { perc } from '../../../functions/perc';
 
 const Perc = () => {
   return (
-    <button onClick={perc} className="perc">
+    <button onClick={perc} className="perc calcBtn">
       %
     </button>
   );

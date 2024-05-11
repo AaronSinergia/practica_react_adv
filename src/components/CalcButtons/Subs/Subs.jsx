@@ -4,7 +4,7 @@ import './Subs.css';
 
 const Subs = () => {
   return (
-    <button onClick={subs} className="subs">
+    <button onClick={subs} className="subs calcBtn">
       -
     </button>
   );
